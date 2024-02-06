@@ -1,0 +1,27 @@
+{% extends 'main.html'%}
+
+{% block title %} Welcome to Online Testing System {% endblock %}
+
+{% block top%}
+<a href="{% url 'OTS:registrationForm' %}">Signup</a>
+<a href="{% url 'OTS:login' %}">Login</a>
+{%endblock%}
+
+{% block content%}
+<h1 style="color: crimson;">Welcome to Online Testing System</h1>
+    <div id="i3">
+        <p style="font-size: 30px;">Online Examination System is a technology-driven way to simplify examination activities like defining exam patterns with question banks, defining exam timers, objective/ subjective question sections, and conducting exams using a computer or mobile devices in a paperless manner.
+
+            Online Examination System is a cost-effective, scalable way to convert traditional pen and paper-based exams to online and paperless mode. Candidates can appear for the exam using any desktop, laptop, or mobile device with a browser. Exam results can be generated instantly for the objective type of questions.
+            
+            It can simplify overall examination management and result in generation activity.</p>
+    </div>
+    
+    <div id="i33">
+        <h1 >What is online testing system?</h1>
+        <p style="font-size: 30px;">Online examination systems are also known as e-assessment systems or computer-based testing systems. They are digital platforms for administering, delivering, and evaluating examinations online.
+
+            There has been an increase in the use of online exams to facilitate access to education and ensure that all learners have equal and quality opportunities, regardless of their location.</p>
+    </div>
+{%endblock%}
+

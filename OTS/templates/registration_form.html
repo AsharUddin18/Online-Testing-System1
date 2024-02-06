@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% block title %} OTS-Registration Form {% endblock %}
+{% block top%}
+
+<a href="{% url 'OTS:login' %}">Login</a>
+{%endblock%}
+{% block content%}
+<div class="all-forms">
+    <form action="{% url 'OTS:storeCandidate' %}" method="post">
+        {% csrf_token %}
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Must be unique">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Combination of letters and numbers" >
+
+        <label for="name">Name</label>
+        <input type="text" name="name" >
+
+        <input type="submit" value="submit" >
+        <input type="reset" value="Clear">
+    </form>
+    Already have an account,<a href="{% url 'OTS:login' %}">Clik hare</a>
+</div>
+{%endblock%}
